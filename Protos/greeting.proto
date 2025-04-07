@@ -2,6 +2,8 @@ syntax = "proto3";
 
 option csharp_namespace = "GrpcProject";
 
+import "google/api/annotations.proto"; // REST annotations to generate endpoints REST (used by grpc-gateway)
+
 package greeting;
 
 // Request message
@@ -16,5 +18,9 @@ message GreetingReply {
 
 // Service definition
 service Greeter {
-  rpc SayHello (GreetingRequest) returns (GreetingReply);
+  rpc SayHello (GreetingRequest) returns (GreetingReply) {
+    option (google.api.http) = { 
+      get: "/v1/sayhello" // REST annotations to generate endpoints REST (used by grpc-gateway)
+    };
+  }
 }
