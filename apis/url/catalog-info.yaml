@@ -3,6 +3,9 @@ kind: API
 metadata:
   name: greeter-api
   description: API for greeting users using gRPC
+  tags:
+    - grpc
+    - proto
 spec:
   type: grpc
   lifecycle: production
