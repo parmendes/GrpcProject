@@ -8,4 +8,4 @@ spec:
   lifecycle: production
   owner: user:guest
   definition:
-    $text: https://github.com/parmendes/GrpcProject/tree/main/Protos
+    $text: https://github.com/parmendes/GrpcProject/tree/main/Protos/greeting.proto
