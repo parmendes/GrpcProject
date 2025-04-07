@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: greeter-api
+  description: API for greeting users using gRPC
+spec:
+  type: grpc
+  lifecycle: production
+  owner: user:guest
+  definition:
+    $file: ./Protos/greeting.proto
