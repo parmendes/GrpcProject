@@ -1,8 +1,11 @@
 syntax = "proto3";
 
-option csharp_namespace = "GrcpProject.Grpc";
+package greeting;
 
-package greeter;
+// Service
+service Greeter {
+  rpc SayHello (HelloRequest) returns (HelloReply);
+}
 
 // Request message
 message HelloRequest {
@@ -13,37 +16,3 @@ message HelloRequest {
 message HelloReply {
   string message = 1;
 }
-
-// Service
-service Greeter {
-  rpc SayHello (HelloRequest) returns (HelloReply);
-}
-
-/*syntax = "proto3";
-
-package greeting;
-
-option csharp_namespace = "GrpcProject";
-option go_package = "github.com/parmendes/GrpcProject/tree/main/Protos";
-
-import "google/api/annotations.proto"; // REST annotations to generate endpoints REST (used by grpc-gateway)
-
-// Request message
-message GreetingRequest {
-  string name = 1;
-}
-
-// Response message
-message GreetingReply {
-  string message = 1;
-}
-
-// Service definition
-service Greeter {
-  rpc SayHello (GreetingRequest) returns (GreetingReply) {
-    option (google.api.http) = { 
-      get: "/v1/sayhello" // REST annotations to generate endpoints REST (used by grpc-gateway)
-    };
-  }
-}
-*/

@@ -17,4 +17,12 @@
     <Protobuf Include="Protos\greeting.proto" GrpcServices="Server" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.24.0" />
+  </ItemGroup>
+
+  <Target Name="GenerateGrpcDocs" AfterTargets="Build">
+    <Exec Command="protoc -I=Protos --doc_out=docs --doc_opt=html,index.html Protos\greeting.proto" />
+  </Target>
+
 </Project>
