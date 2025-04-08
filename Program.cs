@@ -8,6 +8,9 @@ builder.Services.AddGrpc();
 
 var app = builder.Build();
 
+// Enable static files
+app.UseStaticFiles();
+
 // Map the gRPC service
 app.MapGrpcService<GrpcProject.Services.GreetingService>();
 
