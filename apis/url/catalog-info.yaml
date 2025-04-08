@@ -13,8 +13,5 @@ spec:
   links:
     # Links provide additional references or resources related to the component.
     # These links will appear in the Backstage UI under the "Links" section of the component.
-    - url: https://github.com/parmendes/GrpcProject/blob/main/docs/index.md
+    - url: https://github.com/parmendes/GrpcProject/blob/main/apis/url/docs/index.md
       title: gRPC Documentation
-
-  #definition:
-  #  $text: https://github.com/parmendes/GrpcProject/tree/main/Protos/greeting.proto
