@@ -1,14 +1,12 @@
 apiVersion: backstage.io/v1alpha1
-kind: API
+kind: Component
 metadata:
-  name: greeter-api
-  description: API for greeting users using gRPC
-  tags:
-    - grpc
-    - proto
+  name: grpc-project
+  description: gRPC project with generated documentation.
 spec:
   type: grpc
   lifecycle: production
   owner: user:guest
-  definition:
-    $text: https://github.com/parmendes/GrpcProject/tree/main/Protos/greeting.proto
+  links:
+    - url: http://localhost:5000/grpc-docs/index.html
+      title: gRPC Documentation
