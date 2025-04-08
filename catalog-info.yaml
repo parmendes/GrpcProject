@@ -1,12 +1,17 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: grpc-project
-  description: gRPC project with generated documentation.
+  name: grpc-project # The name of the component as it will appear in Backstage.
+  description: gRPC project with generated documentation. # A brief description of the component.
+  annotations:
+    # This annotation tells Backstage where to find the TechDocs documentation for this component.
+    backstage.io/techdocs-ref: url:http://localhost:5000/grpc-docs/index.html
 spec:
-  type: grpc
-  lifecycle: production
+  type: grpc # The type of the component (e.g., service, library, grpc, etc.).
+  lifecycle: experimental # The lifecycle stage of the component (e.g., experimental, production, deprecated).
   owner: user:guest
   links:
+    # Links provide additional references or resources related to the component.
+    # These links will appear in the Backstage UI under the "Links" section of the component.
     - url: http://localhost:5000/grpc-docs/index.html
       title: gRPC Documentation
