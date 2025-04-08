@@ -21,12 +21,12 @@
     <PackageReference Include="Google.Protobuf" Version="3.24.0" />
   </ItemGroup>
 
-  <Target Name="CopyGrpcDocsToWwwroot" AfterTargets="Build">
-    <Copy SourceFiles="docs\index.html" DestinationFolder="wwwroot\grpc-docs" />
-  </Target>
+  <!--Target Name="CopyGrpcDocsToWwwroot" AfterTargets="Build">
+    <Copy SourceFiles="docs\index.md" DestinationFolder="wwwroot\grpc-docs" />
+  </Target-->
 
   <Target Name="GenerateGrpcDocs" AfterTargets="Build">
-    <Exec Command="protoc -I=Protos --doc_out=docs --doc_opt=html,index.html Protos\greeting.proto" />
+    <Exec Command="protoc -I=Protos --doc_out=docs --doc_opt=markdown,index.md Protos\greeting.proto" />
   </Target>
 
 </Project>
