@@ -1,2 +1,4 @@
 site_name: URL API
-docs_dir: docs
+#docs_dir: docs
+nav:
+  - Home: 'index.md'
