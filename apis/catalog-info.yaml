@@ -5,7 +5,7 @@ metadata:
   description: gRPC project with generated documentation. # A brief description of the component.
   annotations:
     # This annotation tells Backstage where to find the TechDocs documentation for this component.
-    backstage.io/techdocs-ref: 'url:https://github.com/parmendes/GrpcProject/blob/main/apis/url/docs'
+    backstage.io/techdocs-ref: 'url:https://github.com/parmendes/GrpcProject/blob/main/apis/url'
 spec:
   type: grpc # The type of the component (e.g., service, library, grpc, etc.).
   lifecycle: experimental # The lifecycle stage of the component (e.g., experimental, production, deprecated).
