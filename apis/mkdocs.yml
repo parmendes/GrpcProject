@@ -1,11 +1,11 @@
-site_name: gRPC Project Documentation
+#site_name: gRPC Project Documentation
 
-plugins:
-  - techdocs-core
-  - monorepo:
-      sources:
-        - url
+#plugins:
+#  - techdocs-core
+#  - monorepo:
+#      sources:
+#        - url
 
-nav:
-  - URL API:
-      - Home: url/index.md
+#nav:
+#  - URL API:
+#      - Home: url/index.md
