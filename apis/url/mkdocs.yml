@@ -1,5 +1,2 @@
-site_name: gRPC Project Documentation
-nav:
-  - Home: index.md
-plugins:
-  - techdocs-core
+site_name: URL API
+docs_dir: docs
