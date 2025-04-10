@@ -5,6 +5,7 @@ metadata:
   description: gRPC project with generated documentation. # A brief description of the component.
   annotations:
     # This annotation tells Backstage where to find the TechDocs documentation for this component.
+    # this could also be `url:<url>` if the documentation isn't in the same location
     #backstage.io/techdocs-ref: url:https://github.com/parmendes/GrpcProject/tree/main/apis/url
     backstage.io/techdocs-ref: dir:. # The directory where the TechDocs documentation is located.
 spec:
