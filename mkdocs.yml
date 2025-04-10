@@ -3,7 +3,8 @@ site_name: Greeter gRPC API Docs
 nav:
   - Home: index.md
 
-docs_dir: docs
-
 plugins:
   - techdocs-core
+  - mkdocs-monorepo-plugin:
+      doc_dirs:
+        - docs
