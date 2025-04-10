@@ -26,7 +26,7 @@
   </Target-->
 
   <Target Name="GenerateGrpcDocs" AfterTargets="Build">
-    <Exec Command="protoc -I=Protos --doc_out=apis\url\docs --doc_opt=markdown,index.md Protos\greeting.proto" />
+    <Exec Command="protoc -I=Protos --doc_out=docs --doc_opt=markdown,index.md Protos\greeting.proto" />
   </Target>
 
 </Project>
