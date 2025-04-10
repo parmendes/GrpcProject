@@ -7,4 +7,4 @@ docs_dir: docs
 
 plugins:
   - techdocs-core
-  - techdocs-monorepo
+  - monorepo
