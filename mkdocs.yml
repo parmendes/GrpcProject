@@ -1,11 +1,9 @@
 site_name: Greeter gRPC API Docs
+
 nav:
   - Home: index.md
+
 docs_dir: docs
+
 plugins:
-  - search
-  - monorepo:
-      combine: true
-      include:
-        - path: docs
   - techdocs-core
