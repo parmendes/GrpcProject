@@ -1,4 +1,4 @@
 mkdocs
 mkdocs-material
 mkdocs-techdocs-core
-mkdocs-monorepo-plugin==1.0.3
+# mkdocs-monorepo-plugin==1.0.3

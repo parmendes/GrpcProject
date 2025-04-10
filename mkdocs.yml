@@ -5,6 +5,6 @@ nav:
 
 plugins:
   - techdocs-core
-  - mkdocs-monorepo-plugin:
-      doc_dirs:
-        - docs
+  # - mkdocs-monorepo-plugin:
+  #     doc_dirs:
+  #       - docs
