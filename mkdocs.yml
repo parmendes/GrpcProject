@@ -6,8 +6,4 @@ nav:
 docs_dir: docs
 
 plugins:
-  - techdocs-core:
-
-markdown_extensions:
-  - toc:
-      permalink: true
+  - techdocs-core
