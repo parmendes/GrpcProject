@@ -5,14 +5,9 @@ metadata:
   description: gRPC project with generated documentation. # A brief description of the component.
   annotations:
     # This annotation tells Backstage where to find the TechDocs documentation for this component.
-    #backstage.io/techdocs-ref: 'url:https://github.com/parmendes/GrpcProject/blob/main/apis/url'
-    backstage.io/techdocs-ref: url:https://github.com/parmendes/GrpcProject/tree/main/apis/url
+    #backstage.io/techdocs-ref: url:https://github.com/parmendes/GrpcProject/tree/main/apis/url
+    backstage.io/techdocs-ref: dir:. # The directory where the TechDocs documentation is located.
 spec:
   type: grpc # The type of the component (e.g., service, library, grpc, etc.).
   lifecycle: experimental # The lifecycle stage of the component (e.g., experimental, production, deprecated).
-  owner: user:guest
-  links:
-    # Links provide additional references or resources related to the component.
-    # These links will appear in the Backstage UI under the "Links" section of the component.
-    - url: https://github.com/parmendes/GrpcProject/blob/main/apis/url/docs/index.md
-      title: gRPC Documentation
+  owner: user:guest # The owner of the component, typically a user or team in Backstage.
