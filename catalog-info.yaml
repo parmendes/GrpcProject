@@ -10,5 +10,5 @@ metadata:
     backstage.io/techdocs-ref: dir:. # The directory where the TechDocs documentation is located.
 spec:
   type: grpc # The type of the component (e.g., service, library, grpc, etc.).
-  lifecycle: experimental # The lifecycle stage of the component (e.g., experimental, production, deprecated).
+  lifecycle: production # The lifecycle stage of the component (e.g., experimental, production, deprecated).
   owner: user:guest # The owner of the component, typically a user or team in Backstage.
