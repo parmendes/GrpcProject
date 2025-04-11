@@ -4,7 +4,7 @@ metadata:
   name: service_with_docs
   description: The place to be, for great artists
   annotations:
-    - backstage.io/techdocs-ref: dir:.
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: website
   lifecycle: production
